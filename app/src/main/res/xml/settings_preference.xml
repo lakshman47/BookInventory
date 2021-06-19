@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="General">
+
+        <ListPreference
+            android:title="@string/pref_currency_title"
+            android:key="@string/pref_currency_key"
+            android:entries="@array/pref_currency_labels"
+            android:entryValues="@array/pref_currency_locales"
+            android:defaultValue="@string/pref_currency_0_label_value"
+            />
+
+        <ListPreference
+            android:title="Sort By"
+            android:key="@string/pref_order_by_key"
+            android:entries="@array/pref_order_by_column_labels"
+            android:entryValues="@array/pref_order_by_column_values"
+            android:defaultValue="@string/pref_order_by_title_value"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>
